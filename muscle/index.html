@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Muscle Diagram</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="diagram-container">
+        <img src="muscle-diagram.png" alt="Muscle Diagram" usemap="#muscle-map" id="muscle-diagram">
+        <map name="muscle-map" id="muscle-map">
+            <!-- Area tags will be added here dynamically -->
+        </map>
+    </div>
+    <div id="info-panel" class="hidden">
+        <h2 id="muscle-name"></h2>
+        <div id="tabs">
+            <button class="tab-button active" data-tab="workouts">Workouts</button>
+            <button class="tab-button" data-tab="stretches">Stretches</button>
+        </div>
+        <div id="workouts" class="tab-content active"></div>
+        <div id="stretches" class="tab-content"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
